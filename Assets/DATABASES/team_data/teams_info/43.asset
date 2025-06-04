@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77deec4532c0546ff8be2147cfadec2e, type: 3}
+  m_Name: 43
+  m_EditorClassIdentifier: 
+  ID: 43
+  Name: BGN
+  Rating: 4
+  HomeKitID: 41
+  AwayKitID: 41
+  Nation: ITALY
+  Logo: {fileID: 0}
+  HomeKit: {fileID: 2800000, guid: f1f03b8ae2be8426d8c784f2d8c7bbaf, type: 3}
+  AwayKit: {fileID: 0}

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SPLASH_SCREEN.unity
+    guid: fb79770a249044a40abf55b8735e9ee1
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 641a71930877d44bc89cb354a1569c64
+  - enabled: 1
+    path: Assets/Scenes/GameScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/SeasonMainMenu.unity
+    guid: 4ec7221f64dbe4e7f959c876cee75bff
+  - enabled: 1
+    path: Assets/Scenes/PostSeasonGameMenu.unity
+    guid: 1de9964cd658f4c01bfc7ef24b9b48fc
+  - enabled: 1
+    path: Assets/Scenes/PostGameMenu.unity
+    guid: 4c62b1821977e4533af97785bbd8de35
+  - enabled: 1
+    path: Assets/Scenes/FinishedSeasonScene.unity
+    guid: 2bc77c65b229b461dbc025c560ca8b9b
+  - enabled: 1
+    path: Assets/Scenes/ChallengeScene.unity
+    guid: 30c3905acd6bd4c6dbbf436deb0a296d
+  - enabled: 1
+    path: Assets/Scenes/PostChallengeMenu.unity
+    guid: 1872727b627684c66815fe665ec6b970
+  m_configObjects: {}

@@ -1,0 +1,21 @@
+ID,Name,Description,TYPE,Value,Reward
+save_1,First Stop,Make your first ever save (Excludes Challenge Mode),TotalSaves,1,50
+save_5,Mitts,Make 5 total saves (Excludes Challenge Mode),TotalSaves,5,100
+save_25,Gaining Experience,Make 25 total saves (Excludes Challenge Mode),TotalSaves,25,250
+save_100,Locked In,Reach 100 saves in your career (Excludes Challenge Mode),TotalSaves,100,500
+save_250,Unbeatable,Reach 250 saves (Excludes Challenge Mode),TotalSaves,250,1000
+match_1,Debut,Play your first match,MatchesPlayed,1,50
+match_10,Starter,Play 10 matches,MatchesPlayed,10,150
+match_30,Veteran,Play 30 matches,MatchesPlayed,30,300
+match_100,The Centurion,Play 100 matches,MatchesPlayed,100,750
+match_250,Legendary Career,Play 250 matches,MatchesPlayed,250,1200
+clean_1,Clean Start,Keep your first clean sheet,CleanSheets,1,100
+clean_5,On Your Way,Keep 5 clean sheets,CleanSheets,5,200
+clean_15,Consistent Hands,Keep 15 clean sheets,CleanSheets,15,300
+clean_30,Fortress,Keep 30 clean sheets,CleanSheets,30,600
+clean_50,Golden Gloves,Keep 50 clean sheets,CleanSheets,50,1000
+win_1,First Taste,Win your first match,MatchesWon,1,100
+win_10,On a Roll,Win 10 matches,MatchesWon,10,250
+win_20,Match Winner,Reach 20 career wins,MatchesWon,20,400
+win_45,Rising Champion,Secure 45 total wins,MatchesWon,45,700
+win_100,Champion Spirit,Reach 100 match wins,MatchesWon,100,1200

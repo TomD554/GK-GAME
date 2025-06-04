@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77deec4532c0546ff8be2147cfadec2e, type: 3}
+  m_Name: 9
+  m_EditorClassIdentifier: 
+  ID: 9
+  Name: EVE
+  Rating: 4
+  HomeKitID: 9
+  AwayKitID: 9
+  Nation: ENGLAND
+  Logo: {fileID: 21300000, guid: eaf510d14a327415ba3a85b89e0a633f, type: 3}
+  HomeKit: {fileID: 2800000, guid: 1b919a3a819654c68baba09d631020b2, type: 3}
+  AwayKit: {fileID: 0}

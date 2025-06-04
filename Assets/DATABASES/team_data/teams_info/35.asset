@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77deec4532c0546ff8be2147cfadec2e, type: 3}
+  m_Name: 35
+  m_EditorClassIdentifier: 
+  ID: 35
+  Name: BET
+  Rating: 3.5
+  HomeKitID: 32
+  AwayKitID: 32
+  Nation: SPAIN
+  Logo: {fileID: 21300000, guid: 260f29896eef94651a9109131c876efb, type: 3}
+  HomeKit: {fileID: 2800000, guid: ebff613ba621e489e9cbe695c5581e4c, type: 3}
+  AwayKit: {fileID: 0}
