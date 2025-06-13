@@ -1,0 +1,155 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="FixtureGenerator">
+			<method name="Save"/>
+		</type>
+		<type fullname="InGameSettings">
+			<method name="CameraZoomChange"/>
+			<method name="CrowdOnOff"/>
+			<method name="SFXOnOff"/>
+		</type>
+		<type fullname="InGameSettings2">
+			<method name="CameraZoomChange"/>
+			<method name="CrowdOnOff"/>
+			<method name="SFXOnOff"/>
+		</type>
+		<type fullname="LoginTests">
+			<method name="LogInAnonymouslyBtn"/>
+			<method name="LogInFBBtn"/>
+		</type>
+		<type fullname="MenuController">
+			<method name="AchievementsButton"/>
+			<method name="BackButtonClicked"/>
+			<method name="BackButtonClicked"/>
+			<method name="BackButtonClicked"/>
+			<method name="BackButtonClicked"/>
+			<method name="BackButtonClicked"/>
+			<method name="BeginSeasonModeClicked"/>
+			<method name="ChallengeButton"/>
+			<method name="ContinueSeasonModeClicked"/>
+			<method name="DialogueNo"/>
+			<method name="DialogueYes"/>
+			<method name="FriendlyGameClicked"/>
+			<method name="PlayButtonClicked"/>
+			<method name="SeasonModeClicked"/>
+			<method name="SeasonModeClicked"/>
+			<method name="SettingsButton"/>
+			<method name="SettingsButton"/>
+			<method name="TeamSelectedSeason"/>
+		</type>
+		<type fullname="MenuSFX">
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+		</type>
+		<type fullname="OpponentSelectionScreen">
+			<method name="BackButtonNation"/>
+			<method name="BackButtonTeam"/>
+			<method name="NextButtonNation"/>
+			<method name="NextButtonTeam"/>
+		</type>
+		<type fullname="PostChallengeMenu">
+			<method name="OnBtnClick"/>
+		</type>
+		<type fullname="PostGameMenu">
+			<method name="ContinueButton"/>
+		</type>
+		<type fullname="PostGameSeasonController">
+			<method name="ContinueButton"/>
+			<method name="NextButton"/>
+		</type>
+		<type fullname="PostSeasonController">
+			<method name="ContinueButton"/>
+		</type>
+		<type fullname="SeasonModeUI">
+			<method name="BackButton"/>
+			<method name="PlayButton"/>
+		</type>
+		<type fullname="SelectionScreen">
+			<method name="BackButtonNation"/>
+			<method name="BackButtonNation"/>
+			<method name="BackButtonTeam"/>
+			<method name="BackButtonTeam"/>
+			<method name="NextButtonNation"/>
+			<method name="NextButtonNation"/>
+			<method name="NextButtonTeam"/>
+			<method name="NextButtonTeam"/>
+		</type>
+		<type fullname="SettingsController">
+			<method name="CameraZoomChange"/>
+			<method name="CameraZoomChange"/>
+			<method name="CrowdOnOff"/>
+			<method name="DifficultyChange"/>
+			<method name="MusicOnOff"/>
+			<method name="SFXOnOff"/>
+		</type>
+		<type fullname="UI">
+			<method name="Back"/>
+			<method name="DialogueNo"/>
+			<method name="DialogueYes"/>
+			<method name="PauseGame"/>
+			<method name="QuitBtn"/>
+			<method name="Resume"/>
+			<method name="SettingsBtn"/>
+		</type>
+		<type fullname="UIController">
+			<method name="Back"/>
+			<method name="DialogueNo"/>
+			<method name="DialogueYes"/>
+			<method name="PauseGame"/>
+			<method name="QuitBtn"/>
+			<method name="Resume"/>
+			<method name="SettingsBtn"/>
+		</type>
+	</assembly>
+</linker>

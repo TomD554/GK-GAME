@@ -77,6 +77,8 @@
     <Compile Include="Assets/Scripts/Menu/OpponentSelectionScreen.cs" />
     <Compile Include="Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/GraphRequest.cs" />
     <Compile Include="Assets/FacebookSDK/Examples/Windows/FBWindowsExampleTabsManager.cs" />
+    <Compile Include="Assets/Krivodeling/UI/Effects/Blur/Demo/Scripts/MovingImage.cs" />
+    <Compile Include="Assets/Krivodeling/UI/Effects/Blur/Scripts/UIBlur.cs" />
     <Compile Include="Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/UploadToMediaLibrary.cs" />
     <Compile Include="Assets/Scripts/ScriptableObjects/Achievements.cs" />
     <Compile Include="Assets/Scripts/UGS Scripts/CloudSaveManager.cs" />
@@ -97,6 +99,7 @@
     <Compile Include="Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/Pay.cs" />
     <Compile Include="Assets/Scripts/ScriptableObjects/Teams.cs" />
     <Compile Include="Assets/FacebookSDK/Examples/Mobile/Scripts/UIInputHelper.cs" />
+    <Compile Include="Assets/Krivodeling/UI/Effects/Blur/Scripts/UIBlurWithCanvasGroup.cs" />
     <Compile Include="Assets/FacebookSDK/Examples/Mobile/Scripts/MenuBase.cs" />
     <Compile Include="Assets/Scripts/Gameplay/ChallengeMode/gamecontroller2.cs" />
     <Compile Include="Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/MainMenu.cs" />
@@ -131,6 +134,7 @@
     <Compile Include="Assets/FacebookSDK/Examples/Windows/FBWindowsTournamentsManager.cs" />
     <Compile Include="Assets/Scripts/Gameplay/UI.cs" />
     <Compile Include="Assets/FacebookSDK/Examples/Mobile/Scripts/SubMenus/AppLinks.cs" />
+    <Compile Include="Assets/Krivodeling/UI/Effects/Blur/Scripts/FlipMode.cs" />
     <Compile Include="Assets/FacebookSDK/Examples/Windows/FBWindowsFriendsManager.cs" />
     <Compile Include="Assets/FacebookSDK/Examples/Windows/FBWindowsReferralsManager.cs" />
     <Compile Include="Assets/Scripts/Gameplay/GKSaveTrigger.cs" />
@@ -199,6 +203,7 @@
     <None Include="Assets/FacebookSDK/Plugins/Windows/x64/XInputInterface.dll" />
     <None Include="Assets/FacebookSDK/Plugins/Windows/x86/libcurl.dll" />
     <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
+    <None Include="Assets/Krivodeling/UI/Effects/Blur/Readme.txt" />
     <None Include="Assets/FacebookSDK/Plugins/Windows/XInputDotNetPure.dll" />
     <None Include="Assets/FacebookSDK/Plugins/Android/Facebook.Unity.Android.dll" />
     <None Include="Assets/FacebookSDK/Plugins/Windows/x64/zlib1.dll" />
@@ -208,6 +213,7 @@
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader" />
     <None Include="Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt" />
+    <None Include="Assets/Krivodeling/UI/Effects/Blur/Shaders/UI Blur.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader" />
     <None Include="Assets/TextMesh Pro/Shaders/TMP_Sprite.shader" />
     <None Include="Assets/FacebookSDK/Plugins/Windows/x86/LibFBGUI.dll" />

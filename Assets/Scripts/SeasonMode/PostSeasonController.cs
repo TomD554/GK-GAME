@@ -16,10 +16,10 @@ public class PostSeasonController : MonoBehaviour
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         float SelectedTeam = PlayerPrefs.GetFloat("SeasonSelectedTeam");
-        int selectedTeamID = PlayerPrefs.HasKey("SeasonSelectedTeam") ? (int)PlayerPrefs.GetFloat("SeasonSelectedTeam") : -1;
+        int selectedTeamID = (int)PlayerPrefs.GetFloat("SeasonSelectedTeam");
         Teams selectedTeam = teamDatabase.allTeams.FirstOrDefault(t => t.ID == selectedTeamID);
 
         if (selectedTeam != null && selectedTeam.Logo != null)
@@ -35,7 +35,7 @@ public class PostSeasonController : MonoBehaviour
         }
 
         GetComponent<LeagueTableManager>().Load();
-        int teamPosition = -1;  // Initialize to an invalid value
+        int teamPosition = -1; 
 
         for (int i = 0; i < LeagueTableManager.LeagueTableList.Teams.Count; i++)
         {
@@ -65,6 +65,15 @@ public class PostSeasonController : MonoBehaviour
         {
             finishedPosition.text = "Team not found"; // Or any other appropriate message
         }
+    }
+
+    private void Start()
+    {
+        PlayerPrefs.DeleteKey("SeasonSelectedTeam");
+        PlayerPrefs.DeleteKey("Round");
+        PlayerPrefs.DeleteKey("SeasonModeStarted");
+        PlayerPrefs.DeleteKey("SeasonTeamName");
+        PlayerPrefs.Save();
     }
 
     string GetPositionSuffix(int position)
@@ -97,9 +106,14 @@ public class PostSeasonController : MonoBehaviour
     public void ContinueButton()
     {
         DeleteFiles();
-        PlayerPrefs.DeleteKey("SeasonSelectedTeam");
-        PlayerPrefs.DeleteKey("Round");
-        PlayerPrefs.DeleteKey("SeasonModeStarted");
+        if (PlayerPrefs.HasKey("SeasonSelectedTeam"))
+        {
+            PlayerPrefs.DeleteKey("SeasonSelectedTeam");
+            PlayerPrefs.DeleteKey("Round");
+            PlayerPrefs.DeleteKey("SeasonModeStarted");
+            PlayerPrefs.DeleteKey("SeasonTeamName");
+            PlayerPrefs.Save();
+        }
         SceneManager.LoadScene("Menu");
     }
 

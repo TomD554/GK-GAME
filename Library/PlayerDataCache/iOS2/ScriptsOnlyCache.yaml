@@ -22,6 +22,7 @@ ScriptsOnlyBuild:
     - GroundSaveTrigger2
     - InGameSettings
     - InGameSettings2
+    - Krivodeling.UI.Effects.UIBlur
     - LeagueTableManager
     - LoginTests
     - MenuController
@@ -84,6 +85,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
@@ -96,6 +98,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
     Assembly-CSharp:
+    - Krivodeling.UI.Effects.UIBlur/BlurChangedEvent
     - PlayerAchievementData
     Facebook.Unity.Settings:
     - Facebook.Unity.Settings.FacebookSettings/UrlSchemes
@@ -117,6 +120,7 @@ ScriptsOnlyBuild:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
     - UnityEngine.Events.PersistentListenerMode
+    - UnityEngine.Events.UnityEvent
     - UnityEngine.RectOffset
     UnityEngine.TextCoreFontEngineModule:
     - UnityEngine.TextCore.FaceInfo
@@ -272,6 +276,12 @@ ScriptsOnlyBuild:
     fullTypeName: SettingsController
     methodName: SFXOnOff
   - assembly: Assembly-CSharp
+    fullTypeName: MenuController
+    methodName: SeasonModeClicked
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
     fullTypeName: SettingsController
     methodName: CrowdOnOff
   - assembly: Assembly-CSharp
@@ -323,6 +333,18 @@ ScriptsOnlyBuild:
     fullTypeName: MenuSFX
     methodName: OnBtnClick
   - assembly: Assembly-CSharp
+    fullTypeName: MenuController
+    methodName: SettingsButton
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: UI
+    methodName: Back
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
     fullTypeName: UI
     methodName: DialogueYes
   - assembly: Assembly-CSharp
@@ -331,12 +353,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: UI
     methodName: DialogueNo
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuSFX
-    methodName: OnBtnClick
-  - assembly: Assembly-CSharp
-    fullTypeName: UI
-    methodName: Back
   - assembly: Assembly-CSharp
     fullTypeName: MenuSFX
     methodName: OnBtnClick
@@ -420,18 +436,6 @@ ScriptsOnlyBuild:
     methodName: OnBtnClick
   - assembly: Assembly-CSharp
     fullTypeName: UIController
-    methodName: DialogueYes
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuSFX
-    methodName: OnBtnClick
-  - assembly: Assembly-CSharp
-    fullTypeName: UIController
-    methodName: DialogueNo
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuSFX
-    methodName: OnBtnClick
-  - assembly: Assembly-CSharp
-    fullTypeName: UIController
     methodName: QuitBtn
   - assembly: Assembly-CSharp
     fullTypeName: MenuSFX
@@ -451,6 +455,18 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: UIController
     methodName: Back
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: UIController
+    methodName: DialogueYes
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: UIController
+    methodName: DialogueNo
   - assembly: Assembly-CSharp
     fullTypeName: MenuSFX
     methodName: OnBtnClick
@@ -841,6 +857,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 20832}
     - Class: 114
+      Script: {instanceID: 21476}
+    - Class: 114
       Script: {instanceID: 21834}
     - Class: 114
       Script: {instanceID: 21928}
@@ -870,6 +888,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 25510}
     - Class: 114
       Script: {instanceID: 26096}
+    - Class: 114
+      Script: {instanceID: 73260}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2784,6 +2804,24 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: c48f027c9a3b585f1a01a88c8e162090
+    assemblyName: Assembly-CSharp
+    namespaceName: Krivodeling.UI.Effects.Examples
+    className: UIBlurWithCanvasGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 3097b79e26a75fb8af475aab9aa04a8c
+    assemblyName: Assembly-CSharp
+    namespaceName: Krivodeling.UI.Effects
+    className: UIBlur
+  - hash:
+      serializedVersion: 2
+      Hash: ca24306d243bcacc4b29d75a762a5501
+    assemblyName: Assembly-CSharp
+    namespaceName: Krivodeling.UI.Effects.Examples
+    className: MovingImage
   platform: 9
   scenePathNames:
   - Assets/Scenes/SPLASH_SCREEN.unity

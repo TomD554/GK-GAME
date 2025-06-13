@@ -790,6 +790,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_CanvasGroup_set_alpha();
 		Register_UnityEngine_CanvasGroup_set_alpha();
 
+		//System.Void UnityEngine.CanvasGroup::set_blocksRaycasts(System.Boolean)
+		void Register_UnityEngine_CanvasGroup_set_blocksRaycasts();
+		Register_UnityEngine_CanvasGroup_set_blocksRaycasts();
+
 		//System.Void UnityEngine.CanvasGroup::set_ignoreParentGroups(System.Boolean)
 		void Register_UnityEngine_CanvasGroup_set_ignoreParentGroups();
 		Register_UnityEngine_CanvasGroup_set_ignoreParentGroups();
