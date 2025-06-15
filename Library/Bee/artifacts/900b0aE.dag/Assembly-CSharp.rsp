@@ -464,6 +464,7 @@
 "Assets/Scripts/Menu/PostGameMenu.cs"
 "Assets/Scripts/Menu/SelectionScreen.cs"
 "Assets/Scripts/Menu/SettingsController.cs"
+"Assets/Scripts/Menu/SPLASH SCREEN/ScreenSizeControllerOnLaunch.cs"
 "Assets/Scripts/ScriptableObjects/AchievementDatabase.cs"
 "Assets/Scripts/ScriptableObjects/Achievements.cs"
 "Assets/Scripts/ScriptableObjects/NationDatabase.cs"

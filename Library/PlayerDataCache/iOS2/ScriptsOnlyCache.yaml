@@ -59,8 +59,6 @@ ScriptsOnlyBuild:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.Services.Authentication.PlayerAccounts:
     - Unity.Services.Authentication.PlayerAccounts.UnityPlayerAccountSettings
-    Unity.Services.Authentication.PlayerAccounts.dll:
-    - Unity.Services.Authentication.PlayerAccounts.UnityPlayerAccountSettings
     Unity.TextMeshPro:
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
@@ -154,6 +152,24 @@ ScriptsOnlyBuild:
     methodName: OnBtnClick
   - assembly: Assembly-CSharp
     fullTypeName: MenuController
+    methodName: SettingsButton
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuController
+    methodName: SettingsButton
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuController
+    methodName: AchievementsButton
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuController
     methodName: BackButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: MenuSFX
@@ -161,6 +177,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: SettingsController
     methodName: CameraZoomChange
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuController
+    methodName: CloseAchievements
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
   - assembly: Assembly-CSharp
     fullTypeName: MenuController
     methodName: PlayButtonClicked
@@ -187,25 +209,19 @@ ScriptsOnlyBuild:
     methodName: OnBtnClick
   - assembly: Assembly-CSharp
     fullTypeName: SelectionScreen
-    methodName: BackButtonTeam
+    methodName: BackButtonNation
   - assembly: Assembly-CSharp
-    fullTypeName: MenuController
-    methodName: BackButtonClicked
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: SelectionScreen
+    methodName: BackButtonTeam
   - assembly: Assembly-CSharp
     fullTypeName: MenuSFX
     methodName: OnBtnClick
   - assembly: Assembly-CSharp
     fullTypeName: SettingsController
     methodName: MusicOnOff
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuController
-    methodName: BackButtonClicked
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuSFX
-    methodName: OnBtnClick
-  - assembly: Assembly-CSharp
-    fullTypeName: SelectionScreen
-    methodName: NextButtonTeam
   - assembly: Assembly-CSharp
     fullTypeName: SettingsController
     methodName: CameraZoomChange
@@ -216,14 +232,23 @@ ScriptsOnlyBuild:
     fullTypeName: MenuSFX
     methodName: OnBtnClick
   - assembly: Assembly-CSharp
-    fullTypeName: OpponentSelectionScreen
-    methodName: NextButtonNation
+    fullTypeName: MenuController
+    methodName: BackButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: MenuSFX
     methodName: OnBtnClick
   - assembly: Assembly-CSharp
     fullTypeName: SelectionScreen
     methodName: NextButtonNation
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: OpponentSelectionScreen
+    methodName: NextButtonNation
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
   - assembly: Assembly-CSharp
     fullTypeName: MenuController
     methodName: DialogueNo
@@ -233,6 +258,12 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: MenuController
     methodName: DialogueYes
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuController
+    methodName: BackButtonClicked
   - assembly: Assembly-CSharp
     fullTypeName: MenuSFX
     methodName: OnBtnClick
@@ -276,9 +307,6 @@ ScriptsOnlyBuild:
     fullTypeName: SettingsController
     methodName: SFXOnOff
   - assembly: Assembly-CSharp
-    fullTypeName: MenuController
-    methodName: SeasonModeClicked
-  - assembly: Assembly-CSharp
     fullTypeName: MenuSFX
     methodName: OnBtnClick
   - assembly: Assembly-CSharp
@@ -292,12 +320,6 @@ ScriptsOnlyBuild:
     methodName: OnBtnClick
   - assembly: Assembly-CSharp
     fullTypeName: MenuController
-    methodName: SettingsButton
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuSFX
-    methodName: OnBtnClick
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuController
     methodName: BeginSeasonModeClicked
   - assembly: Assembly-CSharp
     fullTypeName: MenuSFX
@@ -306,12 +328,6 @@ ScriptsOnlyBuild:
     fullTypeName: SettingsController
     methodName: DifficultyChange
   - assembly: Assembly-CSharp
-    fullTypeName: MenuController
-    methodName: AchievementsButton
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuSFX
-    methodName: OnBtnClick
-  - assembly: Assembly-CSharp
     fullTypeName: OpponentSelectionScreen
     methodName: BackButtonNation
   - assembly: Assembly-CSharp
@@ -319,28 +335,13 @@ ScriptsOnlyBuild:
     methodName: OnBtnClick
   - assembly: Assembly-CSharp
     fullTypeName: SelectionScreen
-    methodName: BackButtonNation
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuController
-    methodName: BackButtonClicked
+    methodName: NextButtonTeam
   - assembly: Assembly-CSharp
     fullTypeName: MenuSFX
     methodName: OnBtnClick
   - assembly: Assembly-CSharp
     fullTypeName: SelectionScreen
     methodName: BackButtonNation
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuSFX
-    methodName: OnBtnClick
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuController
-    methodName: SettingsButton
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuSFX
-    methodName: OnBtnClick
-  - assembly: Assembly-CSharp
-    fullTypeName: UI
-    methodName: Back
   - assembly: Assembly-CSharp
     fullTypeName: MenuSFX
     methodName: OnBtnClick
@@ -375,6 +376,12 @@ ScriptsOnlyBuild:
     fullTypeName: MenuSFX
     methodName: OnBtnClick
   - assembly: Assembly-CSharp
+    fullTypeName: UI
+    methodName: Back
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
     fullTypeName: InGameSettings
     methodName: CameraZoomChange
   - assembly: Assembly-CSharp
@@ -397,10 +404,46 @@ ScriptsOnlyBuild:
     methodName: OnBtnClick
   - assembly: Assembly-CSharp
     fullTypeName: SeasonModeUI
+    methodName: SettingsBackButton
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: SeasonModeUI
+    methodName: CloseAchievements
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: SeasonModeUI
+    methodName: SettingsButton
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: SeasonModeUI
+    methodName: AchievementsButton
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: SeasonModeUI
     methodName: PlayButton
   - assembly: Assembly-CSharp
     fullTypeName: MenuSFX
     methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: SettingsController
+    methodName: DifficultyChange
+  - assembly: Assembly-CSharp
+    fullTypeName: SettingsController
+    methodName: SFXOnOff
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: SettingsController
+    methodName: CameraZoomChange
   - assembly: Assembly-CSharp
     fullTypeName: FixtureGenerator
     methodName: Save
@@ -410,6 +453,18 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: SeasonModeUI
     methodName: BackButton
+  - assembly: Assembly-CSharp
+    fullTypeName: SettingsController
+    methodName: MusicOnOff
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: SettingsController
+    methodName: CrowdOnOff
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
   - assembly: Assembly-CSharp
     fullTypeName: PostGameSeasonController
     methodName: NextButton
@@ -436,6 +491,12 @@ ScriptsOnlyBuild:
     methodName: OnBtnClick
   - assembly: Assembly-CSharp
     fullTypeName: UIController
+    methodName: Back
+  - assembly: Assembly-CSharp
+    fullTypeName: MenuSFX
+    methodName: OnBtnClick
+  - assembly: Assembly-CSharp
+    fullTypeName: UIController
     methodName: QuitBtn
   - assembly: Assembly-CSharp
     fullTypeName: MenuSFX
@@ -449,12 +510,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: UIController
     methodName: Resume
-  - assembly: Assembly-CSharp
-    fullTypeName: MenuSFX
-    methodName: OnBtnClick
-  - assembly: Assembly-CSharp
-    fullTypeName: UIController
-    methodName: Back
   - assembly: Assembly-CSharp
     fullTypeName: MenuSFX
     methodName: OnBtnClick
@@ -536,47 +591,47 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16714}
+      Script: {instanceID: 16716}
     - Class: 114
-      Script: {instanceID: 16720}
+      Script: {instanceID: 16722}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16728}
     - Class: 114
-      Script: {instanceID: 17298}
+      Script: {instanceID: 17300}
     - Class: 114
-      Script: {instanceID: 17610}
+      Script: {instanceID: 17612}
     - Class: 114
-      Script: {instanceID: 17770}
+      Script: {instanceID: 17772}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 18356}
+      Script: {instanceID: 18362}
     - Class: 114
-      Script: {instanceID: 18596}
+      Script: {instanceID: 18602}
     - Class: 114
-      Script: {instanceID: 18770}
+      Script: {instanceID: 18776}
     - Class: 114
-      Script: {instanceID: 19260}
+      Script: {instanceID: 19268}
     - Class: 114
-      Script: {instanceID: 20826}
+      Script: {instanceID: 20836}
     - Class: 114
-      Script: {instanceID: 21818}
+      Script: {instanceID: 21828}
     - Class: 114
-      Script: {instanceID: 21834}
+      Script: {instanceID: 21844}
     - Class: 114
-      Script: {instanceID: 21928}
+      Script: {instanceID: 21938}
     - Class: 114
-      Script: {instanceID: 21946}
+      Script: {instanceID: 21956}
     - Class: 114
-      Script: {instanceID: 21992}
+      Script: {instanceID: 22002}
     - Class: 114
-      Script: {instanceID: 22636}
+      Script: {instanceID: 22646}
     - Class: 114
-      Script: {instanceID: 22894}
+      Script: {instanceID: 22904}
     - Class: 114
-      Script: {instanceID: 23708}
+      Script: {instanceID: 23718}
     - Class: 114
-      Script: {instanceID: 23864}
+      Script: {instanceID: 23876}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -627,29 +682,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16714}
+      Script: {instanceID: 16716}
     - Class: 114
-      Script: {instanceID: 16720}
+      Script: {instanceID: 16722}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16728}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 18596}
+      Script: {instanceID: 18602}
     - Class: 114
-      Script: {instanceID: 18710}
+      Script: {instanceID: 18716}
     - Class: 114
-      Script: {instanceID: 22894}
+      Script: {instanceID: 22904}
     - Class: 114
-      Script: {instanceID: 23416}
+      Script: {instanceID: 23426}
     - Class: 114
-      Script: {instanceID: 23700}
+      Script: {instanceID: 23710}
     - Class: 114
-      Script: {instanceID: 23708}
+      Script: {instanceID: 23718}
     - Class: 114
-      Script: {instanceID: 23864}
+      Script: {instanceID: 23876}
     - Class: 114
-      Script: {instanceID: 26096}
+      Script: {instanceID: 26108}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -712,67 +767,67 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16714}
+      Script: {instanceID: 16716}
     - Class: 114
-      Script: {instanceID: 16720}
+      Script: {instanceID: 16722}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16728}
     - Class: 114
-      Script: {instanceID: 17268}
+      Script: {instanceID: 17270}
     - Class: 114
-      Script: {instanceID: 17494}
+      Script: {instanceID: 17496}
     - Class: 114
-      Script: {instanceID: 17610}
+      Script: {instanceID: 17612}
     - Class: 114
-      Script: {instanceID: 17756}
+      Script: {instanceID: 17758}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 18356}
+      Script: {instanceID: 18362}
     - Class: 114
-      Script: {instanceID: 18480}
+      Script: {instanceID: 18486}
     - Class: 114
-      Script: {instanceID: 18596}
+      Script: {instanceID: 18602}
     - Class: 114
-      Script: {instanceID: 18770}
+      Script: {instanceID: 18776}
     - Class: 114
-      Script: {instanceID: 19260}
+      Script: {instanceID: 19268}
     - Class: 114
-      Script: {instanceID: 19770}
+      Script: {instanceID: 19780}
     - Class: 114
-      Script: {instanceID: 20164}
+      Script: {instanceID: 20174}
     - Class: 114
-      Script: {instanceID: 20608}
+      Script: {instanceID: 20618}
     - Class: 114
-      Script: {instanceID: 20898}
+      Script: {instanceID: 20908}
     - Class: 114
-      Script: {instanceID: 21834}
+      Script: {instanceID: 21844}
     - Class: 114
-      Script: {instanceID: 21928}
+      Script: {instanceID: 21938}
     - Class: 114
-      Script: {instanceID: 21992}
+      Script: {instanceID: 22002}
     - Class: 114
-      Script: {instanceID: 22100}
+      Script: {instanceID: 22110}
     - Class: 114
-      Script: {instanceID: 22460}
+      Script: {instanceID: 22470}
     - Class: 114
-      Script: {instanceID: 22894}
+      Script: {instanceID: 22904}
     - Class: 114
-      Script: {instanceID: 22928}
+      Script: {instanceID: 22938}
     - Class: 114
-      Script: {instanceID: 23516}
+      Script: {instanceID: 23526}
     - Class: 114
-      Script: {instanceID: 23700}
+      Script: {instanceID: 23710}
     - Class: 114
-      Script: {instanceID: 23708}
+      Script: {instanceID: 23718}
     - Class: 114
-      Script: {instanceID: 23864}
+      Script: {instanceID: 23876}
     - Class: 114
-      Script: {instanceID: 24524}
+      Script: {instanceID: 24536}
     - Class: 114
-      Script: {instanceID: 25036}
+      Script: {instanceID: 25048}
     - Class: 114
-      Script: {instanceID: 26096}
+      Script: {instanceID: 26108}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -827,69 +882,69 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16714}
-    - Class: 114
       Script: {instanceID: 16716}
     - Class: 114
-      Script: {instanceID: 16720}
+      Script: {instanceID: 16718}
     - Class: 114
       Script: {instanceID: 16722}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16724}
     - Class: 114
-      Script: {instanceID: 17016}
+      Script: {instanceID: 16728}
     - Class: 114
-      Script: {instanceID: 17756}
+      Script: {instanceID: 17018}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 17758}
     - Class: 114
-      Script: {instanceID: 18596}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 19252}
+      Script: {instanceID: 18602}
     - Class: 114
-      Script: {instanceID: 19286}
+      Script: {instanceID: 19260}
     - Class: 114
-      Script: {instanceID: 20200}
+      Script: {instanceID: 19294}
     - Class: 114
-      Script: {instanceID: 20484}
+      Script: {instanceID: 20210}
     - Class: 114
-      Script: {instanceID: 20694}
+      Script: {instanceID: 20494}
     - Class: 114
-      Script: {instanceID: 20832}
+      Script: {instanceID: 20704}
     - Class: 114
-      Script: {instanceID: 21476}
+      Script: {instanceID: 20842}
     - Class: 114
-      Script: {instanceID: 21834}
+      Script: {instanceID: 21486}
     - Class: 114
-      Script: {instanceID: 21928}
+      Script: {instanceID: 21844}
     - Class: 114
-      Script: {instanceID: 22026}
+      Script: {instanceID: 21938}
     - Class: 114
-      Script: {instanceID: 22048}
+      Script: {instanceID: 22036}
     - Class: 114
-      Script: {instanceID: 22618}
+      Script: {instanceID: 22058}
     - Class: 114
-      Script: {instanceID: 22792}
+      Script: {instanceID: 22628}
     - Class: 114
-      Script: {instanceID: 22894}
+      Script: {instanceID: 22802}
     - Class: 114
-      Script: {instanceID: 23224}
+      Script: {instanceID: 22904}
     - Class: 114
-      Script: {instanceID: 23700}
+      Script: {instanceID: 23234}
     - Class: 114
-      Script: {instanceID: 23708}
+      Script: {instanceID: 23710}
     - Class: 114
-      Script: {instanceID: 23864}
+      Script: {instanceID: 23718}
     - Class: 114
-      Script: {instanceID: 25222}
+      Script: {instanceID: 23728}
     - Class: 114
-      Script: {instanceID: 25302}
+      Script: {instanceID: 23876}
     - Class: 114
-      Script: {instanceID: 25510}
+      Script: {instanceID: 25234}
     - Class: 114
-      Script: {instanceID: 26096}
+      Script: {instanceID: 25314}
     - Class: 114
-      Script: {instanceID: 73260}
+      Script: {instanceID: 25522}
+    - Class: 114
+      Script: {instanceID: 26108}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -928,23 +983,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16714}
+      Script: {instanceID: 16716}
     - Class: 114
-      Script: {instanceID: 16720}
+      Script: {instanceID: 16722}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16728}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 18596}
+      Script: {instanceID: 18602}
     - Class: 114
-      Script: {instanceID: 22552}
+      Script: {instanceID: 22562}
     - Class: 114
-      Script: {instanceID: 22894}
+      Script: {instanceID: 22904}
     - Class: 114
-      Script: {instanceID: 23708}
+      Script: {instanceID: 23718}
     - Class: 114
-      Script: {instanceID: 23864}
+      Script: {instanceID: 23876}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -983,23 +1038,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16714}
+      Script: {instanceID: 16716}
     - Class: 114
-      Script: {instanceID: 16720}
+      Script: {instanceID: 16722}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16728}
     - Class: 114
-      Script: {instanceID: 18020}
+      Script: {instanceID: 18024}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 18596}
+      Script: {instanceID: 18602}
     - Class: 114
-      Script: {instanceID: 22894}
+      Script: {instanceID: 22904}
     - Class: 114
-      Script: {instanceID: 23708}
+      Script: {instanceID: 23718}
     - Class: 114
-      Script: {instanceID: 23864}
+      Script: {instanceID: 23876}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1038,39 +1093,41 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16714}
-    - Class: 114
-      Script: {instanceID: 16718}
+      Script: {instanceID: 16716}
     - Class: 114
       Script: {instanceID: 16720}
     - Class: 114
       Script: {instanceID: 16722}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16724}
     - Class: 114
-      Script: {instanceID: 16948}
+      Script: {instanceID: 16728}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 16950}
     - Class: 114
-      Script: {instanceID: 18488}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 18596}
+      Script: {instanceID: 18494}
     - Class: 114
-      Script: {instanceID: 19286}
+      Script: {instanceID: 18602}
     - Class: 114
-      Script: {instanceID: 21752}
+      Script: {instanceID: 19294}
     - Class: 114
-      Script: {instanceID: 22894}
+      Script: {instanceID: 21486}
     - Class: 114
-      Script: {instanceID: 23416}
+      Script: {instanceID: 21762}
     - Class: 114
-      Script: {instanceID: 23700}
+      Script: {instanceID: 22904}
     - Class: 114
-      Script: {instanceID: 23708}
+      Script: {instanceID: 23426}
     - Class: 114
-      Script: {instanceID: 23864}
+      Script: {instanceID: 23710}
     - Class: 114
-      Script: {instanceID: 26096}
+      Script: {instanceID: 23718}
+    - Class: 114
+      Script: {instanceID: 23876}
+    - Class: 114
+      Script: {instanceID: 26108}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1115,43 +1172,43 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16714}
+      Script: {instanceID: 16716}
     - Class: 114
-      Script: {instanceID: 16720}
+      Script: {instanceID: 16722}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16728}
     - Class: 114
-      Script: {instanceID: 17656}
+      Script: {instanceID: 17658}
     - Class: 114
-      Script: {instanceID: 18226}
+      Script: {instanceID: 18232}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 18596}
+      Script: {instanceID: 18602}
     - Class: 114
-      Script: {instanceID: 18994}
+      Script: {instanceID: 19002}
     - Class: 114
-      Script: {instanceID: 19302}
+      Script: {instanceID: 19310}
     - Class: 114
-      Script: {instanceID: 20102}
+      Script: {instanceID: 20112}
     - Class: 114
-      Script: {instanceID: 20546}
+      Script: {instanceID: 20556}
     - Class: 114
-      Script: {instanceID: 20942}
+      Script: {instanceID: 20952}
     - Class: 114
-      Script: {instanceID: 22032}
+      Script: {instanceID: 22042}
     - Class: 114
-      Script: {instanceID: 22618}
+      Script: {instanceID: 22628}
     - Class: 114
-      Script: {instanceID: 22792}
+      Script: {instanceID: 22802}
     - Class: 114
-      Script: {instanceID: 22894}
+      Script: {instanceID: 22904}
     - Class: 114
-      Script: {instanceID: 23668}
+      Script: {instanceID: 23678}
     - Class: 114
-      Script: {instanceID: 23708}
+      Script: {instanceID: 23718}
     - Class: 114
-      Script: {instanceID: 23864}
+      Script: {instanceID: 23876}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1190,7 +1247,7 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16714}
+      Script: {instanceID: 16716}
     - Class: 114
       Script: {instanceID: 16718}
     - Class: 114
@@ -1198,35 +1255,61 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16722}
     - Class: 114
-      Script: {instanceID: 16726}
+      Script: {instanceID: 16724}
     - Class: 114
-      Script: {instanceID: 16948}
+      Script: {instanceID: 16728}
     - Class: 114
-      Script: {instanceID: 17756}
+      Script: {instanceID: 16950}
     - Class: 114
-      Script: {instanceID: 18290}
+      Script: {instanceID: 17018}
     - Class: 114
-      Script: {instanceID: 18596}
+      Script: {instanceID: 17758}
     - Class: 114
-      Script: {instanceID: 19286}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 21752}
+      Script: {instanceID: 18602}
     - Class: 114
-      Script: {instanceID: 22442}
+      Script: {instanceID: 19294}
     - Class: 114
-      Script: {instanceID: 22894}
+      Script: {instanceID: 20210}
     - Class: 114
-      Script: {instanceID: 23416}
+      Script: {instanceID: 20494}
     - Class: 114
-      Script: {instanceID: 23700}
+      Script: {instanceID: 20842}
     - Class: 114
-      Script: {instanceID: 23708}
+      Script: {instanceID: 21486}
     - Class: 114
-      Script: {instanceID: 23864}
+      Script: {instanceID: 21762}
     - Class: 114
-      Script: {instanceID: 25414}
+      Script: {instanceID: 21844}
     - Class: 114
-      Script: {instanceID: 26096}
+      Script: {instanceID: 21938}
+    - Class: 114
+      Script: {instanceID: 22452}
+    - Class: 114
+      Script: {instanceID: 22628}
+    - Class: 114
+      Script: {instanceID: 22802}
+    - Class: 114
+      Script: {instanceID: 22904}
+    - Class: 114
+      Script: {instanceID: 23426}
+    - Class: 114
+      Script: {instanceID: 23710}
+    - Class: 114
+      Script: {instanceID: 23718}
+    - Class: 114
+      Script: {instanceID: 23728}
+    - Class: 114
+      Script: {instanceID: 23876}
+    - Class: 114
+      Script: {instanceID: 25234}
+    - Class: 114
+      Script: {instanceID: 25314}
+    - Class: 114
+      Script: {instanceID: 25426}
+    - Class: 114
+      Script: {instanceID: 26108}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1444,6 +1527,12 @@ ScriptsOnlyBuild:
     className: GroundSaveTrigger2
   - hash:
       serializedVersion: 2
+      Hash: c48f027c9a3b585f1a01a88c8e162090
+    assemblyName: Assembly-CSharp
+    namespaceName: Krivodeling.UI.Effects.Examples
+    className: UIBlurWithCanvasGroup
+  - hash:
+      serializedVersion: 2
       Hash: da55c96f4c9d6c109ce8b17e7c8843ea
     assemblyName: Assembly-CSharp
     namespaceName: 
@@ -1618,6 +1707,12 @@ ScriptsOnlyBuild:
     className: EconomyCodeSample
   - hash:
       serializedVersion: 2
+      Hash: 2578c568d6b0a9fe71630602b1d3ab5c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ScreenSizeControllerOnLaunch
+  - hash:
+      serializedVersion: 2
       Hash: b98001682cba83786775c9e415b89a61
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1766,6 +1861,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: AnimationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: ca24306d243bcacc4b29d75a762a5501
+    assemblyName: Assembly-CSharp
+    namespaceName: Krivodeling.UI.Effects.Examples
+    className: MovingImage
   - hash:
       serializedVersion: 2
       Hash: 6217b1287eca7eed313cf0b864249a30
@@ -2434,6 +2535,12 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
+      Hash: 3097b79e26a75fb8af475aab9aa04a8c
+    assemblyName: Assembly-CSharp
+    namespaceName: Krivodeling.UI.Effects
+    className: UIBlur
+  - hash:
+      serializedVersion: 2
       Hash: 13f262cc0741566a7ab72682984bc3e1
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -2662,7 +2769,7 @@ ScriptsOnlyBuild:
     className: AppLinks
   - hash:
       serializedVersion: 2
-      Hash: b7727e8362545fb69fb7d2e29dc0fceb
+      Hash: 8d7f5f8448ccbfd342923e3595db2bf4
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: SeasonModeUI
@@ -2804,24 +2911,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: c48f027c9a3b585f1a01a88c8e162090
-    assemblyName: Assembly-CSharp
-    namespaceName: Krivodeling.UI.Effects.Examples
-    className: UIBlurWithCanvasGroup
-  - hash:
-      serializedVersion: 2
-      Hash: 3097b79e26a75fb8af475aab9aa04a8c
-    assemblyName: Assembly-CSharp
-    namespaceName: Krivodeling.UI.Effects
-    className: UIBlur
-  - hash:
-      serializedVersion: 2
-      Hash: ca24306d243bcacc4b29d75a762a5501
-    assemblyName: Assembly-CSharp
-    namespaceName: Krivodeling.UI.Effects.Examples
-    className: MovingImage
   platform: 9
   scenePathNames:
   - Assets/Scenes/SPLASH_SCREEN.unity

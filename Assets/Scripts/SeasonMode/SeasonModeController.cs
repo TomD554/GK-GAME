@@ -15,7 +15,7 @@ public class SeasonModeController : MonoBehaviour
 {
     // Get the team ID that was saved in PlayerPrefs
     int selectedTeamID = PlayerPrefs.HasKey("SeasonSelectedTeam")
-        ? (int)PlayerPrefs.GetFloat("SeasonSelectedTeam") 
+        ? (int)PlayerPrefs.GetInt("SeasonSelectedTeam") 
         : -1;
 
     if (selectedTeamID == -1)

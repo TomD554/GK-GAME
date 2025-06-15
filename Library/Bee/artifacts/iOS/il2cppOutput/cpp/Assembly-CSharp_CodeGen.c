@@ -533,6 +533,7 @@ extern void MenuController_Update_m15DD6714D46E0384A1F59B62B8A6323C108058D6 (voi
 extern void MenuController_ChallengeButton_mD5CD886F68F94E4D6E6C09753818315C490C8E9F (void);
 extern void MenuController_SettingsButton_m5A21F5E4F427BE58E1AE79AA0FDEEA605467024F (void);
 extern void MenuController_AchievementsButton_m9C68E031ACFB5CF1A5B732C9F8E4AA802A275321 (void);
+extern void MenuController_CloseAchievements_m446CCEE84EA7B9699B14495B3DF9C1D2FD2EFB00 (void);
 extern void MenuController_BackButtonClicked_m6CFBAA8F919792849076CC733B9139321F3F09CF (void);
 extern void MenuController_FriendlyGameClicked_m25D11DC4290E99F034E4F4E650CA8BFFA4FE081A (void);
 extern void MenuController_PlayButtonClicked_m721C75CDD7F6570F4E2F1647EAD14C19F5F2386A (void);
@@ -633,6 +634,8 @@ extern void SettingsController_MusicOnOff_mB3883D295B3F504882BD0E923E9ABAF8E0541
 extern void SettingsController_CrowdOnOff_m6775A4617C6232B7C11BFF5D892FF9FA650448B5 (void);
 extern void SettingsController_DifficultyChange_m94C4CE6BF19E18FBD2D3BC07036E99B75CCAF00B (void);
 extern void SettingsController__ctor_mC1D5DFEFE813AC5732F61D424190E259768F4795 (void);
+extern void ScreenSizeControllerOnLaunch_Start_mD82D98EF4277E3F34F515B3DEDEF4F87F46DCEB0 (void);
+extern void ScreenSizeControllerOnLaunch__ctor_m3695544B1137442638276EA43C68EB28C85D55DF (void);
 extern void AchievementDatabase__ctor_m01409CA146D61A527F65276CBA30B2E4F398D2E5 (void);
 extern void Achievements__ctor_m2983A1EC255A5865CAB22DB05BFED606BAD93FF7 (void);
 extern void NationDatabase__ctor_m5D84B5B037941504777A3FCA5D347802CCC253F8 (void);
@@ -705,6 +708,10 @@ extern void SeasonModeUI_UpdateFixtureList_m459F5FAF9DCFD38604337B8FBD3C6D6E4C6B
 extern void SeasonModeUI_UpdateUITable_mD029D58FE8B346A19B7FCAECD24EAA401919A677 (void);
 extern void SeasonModeUI_BackButton_m287777A5324DB25FE21CD9E03B73C5D15BB9DDD9 (void);
 extern void SeasonModeUI_PlayButton_mA90203FCA2646D4B84C4225A16FB86DFECA79C1B (void);
+extern void SeasonModeUI_SettingsButton_m464C77254DEF7561BFDC7844DD2CAAEF43745BA6 (void);
+extern void SeasonModeUI_SettingsBackButton_mFF2232BAA3311F644855581D36A46D7A7632AD52 (void);
+extern void SeasonModeUI_AchievementsButton_m464A76FD2370240CFC1AAB1280D1AE5A904AF27C (void);
+extern void SeasonModeUI_CloseAchievements_mF524053C006058C5195A0F17418E05E54B78907F (void);
 extern void SeasonModeUI__ctor_m7E31E07E8F1A5F2DB06E63E1E94F6BCCCE9A74CE (void);
 extern void CloudSaveManager_add_OnPlayerDataLoaded_m91BF2B8B8054AAEDF5ED78F8AA1FF056DB18E6C9 (void);
 extern void CloudSaveManager_remove_OnPlayerDataLoaded_mC7C6E86B4499C969B332FD0C5F7E563F0062CD73 (void);
@@ -1015,7 +1022,7 @@ extern void TournamentsMenu__ctor_mA3069507B062E55BF40EA9C97FEDBF5C64B69705 (voi
 extern void UploadToMediaLibrary_GetGui_m420ECCD445E271C81786F4637EBFBB9F9C44B5D9 (void);
 extern void UploadToMediaLibrary_GetPath_mDBF5060B2EC32877F865F24B6D97C420B7610760 (void);
 extern void UploadToMediaLibrary__ctor_m4AA178830775ECF0D746C2C99DE10BA396FE4FB3 (void);
-static Il2CppMethodPointer s_methodPointers[1004] = 
+static Il2CppMethodPointer s_methodPointers[1011] = 
 {
 	ProductRowPrefab_Awake_mD4EF737A98D2142305B75092AD5DAFAED5E3FCF5,
 	ProductRowPrefab_OnLogBtnClick_mF5BD13741AFABC2663C4C4B846F2ED6B426350C5,
@@ -1538,6 +1545,7 @@ static Il2CppMethodPointer s_methodPointers[1004] =
 	MenuController_ChallengeButton_mD5CD886F68F94E4D6E6C09753818315C490C8E9F,
 	MenuController_SettingsButton_m5A21F5E4F427BE58E1AE79AA0FDEEA605467024F,
 	MenuController_AchievementsButton_m9C68E031ACFB5CF1A5B732C9F8E4AA802A275321,
+	MenuController_CloseAchievements_m446CCEE84EA7B9699B14495B3DF9C1D2FD2EFB00,
 	MenuController_BackButtonClicked_m6CFBAA8F919792849076CC733B9139321F3F09CF,
 	MenuController_FriendlyGameClicked_m25D11DC4290E99F034E4F4E650CA8BFFA4FE081A,
 	MenuController_PlayButtonClicked_m721C75CDD7F6570F4E2F1647EAD14C19F5F2386A,
@@ -1638,6 +1646,8 @@ static Il2CppMethodPointer s_methodPointers[1004] =
 	SettingsController_CrowdOnOff_m6775A4617C6232B7C11BFF5D892FF9FA650448B5,
 	SettingsController_DifficultyChange_m94C4CE6BF19E18FBD2D3BC07036E99B75CCAF00B,
 	SettingsController__ctor_mC1D5DFEFE813AC5732F61D424190E259768F4795,
+	ScreenSizeControllerOnLaunch_Start_mD82D98EF4277E3F34F515B3DEDEF4F87F46DCEB0,
+	ScreenSizeControllerOnLaunch__ctor_m3695544B1137442638276EA43C68EB28C85D55DF,
 	AchievementDatabase__ctor_m01409CA146D61A527F65276CBA30B2E4F398D2E5,
 	Achievements__ctor_m2983A1EC255A5865CAB22DB05BFED606BAD93FF7,
 	NationDatabase__ctor_m5D84B5B037941504777A3FCA5D347802CCC253F8,
@@ -1710,6 +1720,10 @@ static Il2CppMethodPointer s_methodPointers[1004] =
 	SeasonModeUI_UpdateUITable_mD029D58FE8B346A19B7FCAECD24EAA401919A677,
 	SeasonModeUI_BackButton_m287777A5324DB25FE21CD9E03B73C5D15BB9DDD9,
 	SeasonModeUI_PlayButton_mA90203FCA2646D4B84C4225A16FB86DFECA79C1B,
+	SeasonModeUI_SettingsButton_m464C77254DEF7561BFDC7844DD2CAAEF43745BA6,
+	SeasonModeUI_SettingsBackButton_mFF2232BAA3311F644855581D36A46D7A7632AD52,
+	SeasonModeUI_AchievementsButton_m464A76FD2370240CFC1AAB1280D1AE5A904AF27C,
+	SeasonModeUI_CloseAchievements_mF524053C006058C5195A0F17418E05E54B78907F,
 	SeasonModeUI__ctor_m7E31E07E8F1A5F2DB06E63E1E94F6BCCCE9A74CE,
 	CloudSaveManager_add_OnPlayerDataLoaded_m91BF2B8B8054AAEDF5ED78F8AA1FF056DB18E6C9,
 	CloudSaveManager_remove_OnPlayerDataLoaded_mC7C6E86B4499C969B332FD0C5F7E563F0062CD73,
@@ -2022,7 +2036,7 @@ static Il2CppMethodPointer s_methodPointers[1004] =
 	UploadToMediaLibrary_GetPath_mDBF5060B2EC32877F865F24B6D97C420B7610760,
 	UploadToMediaLibrary__ctor_m4AA178830775ECF0D746C2C99DE10BA396FE4FB3,
 };
-static const int32_t s_InvokerIndices[1004] = 
+static const int32_t s_InvokerIndices[1011] = 
 {
 	5919,
 	5919,
@@ -2557,6 +2571,7 @@ static const int32_t s_InvokerIndices[1004] =
 	5919,
 	5919,
 	5919,
+	5919,
 	2722,
 	5919,
 	5919,
@@ -2656,6 +2671,8 @@ static const int32_t s_InvokerIndices[1004] =
 	5919,
 	5919,
 	5919,
+	5919,
+	5919,
 	4802,
 	5919,
 	5919,
@@ -2711,6 +2728,10 @@ static const int32_t s_InvokerIndices[1004] =
 	5919,
 	5919,
 	3446,
+	5919,
+	5919,
+	5919,
+	5919,
 	5919,
 	5919,
 	5919,
@@ -3033,7 +3054,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	1004,
+	1011,
 	s_methodPointers,
 	0,
 	NULL,

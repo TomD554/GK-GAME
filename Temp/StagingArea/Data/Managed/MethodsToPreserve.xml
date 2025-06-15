@@ -23,21 +23,31 @@
 			<method name="BackButtonClicked"/>
 			<method name="BackButtonClicked"/>
 			<method name="BackButtonClicked"/>
-			<method name="BackButtonClicked"/>
 			<method name="BeginSeasonModeClicked"/>
 			<method name="ChallengeButton"/>
+			<method name="CloseAchievements"/>
 			<method name="ContinueSeasonModeClicked"/>
 			<method name="DialogueNo"/>
 			<method name="DialogueYes"/>
 			<method name="FriendlyGameClicked"/>
 			<method name="PlayButtonClicked"/>
 			<method name="SeasonModeClicked"/>
-			<method name="SeasonModeClicked"/>
 			<method name="SettingsButton"/>
 			<method name="SettingsButton"/>
 			<method name="TeamSelectedSeason"/>
 		</type>
 		<type fullname="MenuSFX">
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
+			<method name="OnBtnClick"/>
 			<method name="OnBtnClick"/>
 			<method name="OnBtnClick"/>
 			<method name="OnBtnClick"/>
@@ -112,8 +122,12 @@
 			<method name="ContinueButton"/>
 		</type>
 		<type fullname="SeasonModeUI">
+			<method name="AchievementsButton"/>
 			<method name="BackButton"/>
+			<method name="CloseAchievements"/>
 			<method name="PlayButton"/>
+			<method name="SettingsBackButton"/>
+			<method name="SettingsButton"/>
 		</type>
 		<type fullname="SelectionScreen">
 			<method name="BackButtonNation"/>
@@ -128,9 +142,14 @@
 		<type fullname="SettingsController">
 			<method name="CameraZoomChange"/>
 			<method name="CameraZoomChange"/>
+			<method name="CameraZoomChange"/>
+			<method name="CrowdOnOff"/>
 			<method name="CrowdOnOff"/>
 			<method name="DifficultyChange"/>
+			<method name="DifficultyChange"/>
 			<method name="MusicOnOff"/>
+			<method name="MusicOnOff"/>
+			<method name="SFXOnOff"/>
 			<method name="SFXOnOff"/>
 		</type>
 		<type fullname="UI">

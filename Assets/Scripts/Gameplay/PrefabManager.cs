@@ -51,14 +51,17 @@ public class PrefabManager : MonoBehaviour
         {
             int defID = PlayerPrefs.GetInt("SeasonSelectedTeam");
             PlayerTeam = teamDatabase.allTeams.FirstOrDefault(t => t.ID == defID);
+            Debug.Log("SeasonSelectedTeam ID: " + defID);
         }
         else
         {
             PlayerTeam = SelectionScreen.SelectedTeam;
         }
-
+        Debug.Log("Selected Team: " + PlayerTeam.Name);
+        Debug.Log("Player Kit: " + PlayerTeam.HomeKit);
         if (PlayerTeam != null && PlayerTeam.HomeKit != null)
         {
+            Debug.Log("Selected Kit: " + PlayerTeam.HomeKit);
             Materials[1].SetTexture("_MainTex", PlayerTeam.HomeKit);
         }
     }

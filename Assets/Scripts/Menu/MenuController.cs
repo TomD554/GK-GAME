@@ -34,6 +34,7 @@ public class MenuController : MonoBehaviour
     }
     void Start()
     {
+        Debug.Log("Safe area: " + Screen.safeArea);
         Fadeobj = GameObject.Find("FADE_IMAGE");
         ChallengeMode = false;
         Application.targetFrameRate = 60;
@@ -84,6 +85,20 @@ public class MenuController : MonoBehaviour
             var button = btn.GetComponent<Button>();
             if (button != null)
                 button.interactable = false;
+        }
+
+    }
+
+    public void CloseAchievements()
+    {
+        AchievementDisplay achievementDisplay = GetComponent<AchievementDisplay>();
+        achievementDisplay.SetupAchievements();
+        Achievements.SetActive(false);
+        foreach (var btn in GameObject.FindGameObjectsWithTag("Button"))
+        {
+            var button = btn.GetComponent<Button>();
+            if (button != null)
+                button.interactable = true;
         }
 
     }
@@ -161,12 +176,14 @@ public class MenuController : MonoBehaviour
     }
     public void TeamSelectedSeason()
     {
-        PlayerPrefs.SetFloat("SeasonSelectedTeam", SelectionScreen.SelectedTeam.ID);
+        PlayerPrefs.SetInt("SeasonSelectedTeam", SelectionScreen.SelectedTeam.ID);
+        Debug.Log("SeasonSelectedTeam:" + PlayerPrefs.GetFloat("SeasonSelectedTeam"));
         PlayerPrefs.SetString("SeasonTeamName", SelectionScreen.SelectedTeam.Name);
         PlayerPrefs.SetFloat("SeasonSelectedTeamKit", SelectionScreen.SelectedTeam.HomeKitID);
         PlayerPrefs.SetString("SeasonModeStarted", "true");
         Debug.Log(PlayerPrefs.GetFloat("SeasonSelectedTeam"));
         PlayerPrefs.SetInt("Round", 1);
+        PlayerPrefs.Save();
         SceneManager.LoadScene("SeasonMainMenu");
     }
     public void ContinueSeasonModeClicked()

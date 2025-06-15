@@ -11,6 +11,10 @@ public class SeasonModeUI : MonoBehaviour
     public static bool IsAwayTeam;
     public static int Round;
     public GameObject Fadeobj;
+    public GameObject Settings;
+    public GameObject Achievements;
+    public GameObject Main;
+
 
     private void Awake()
     {
@@ -144,5 +148,42 @@ public class SeasonModeUI : MonoBehaviour
             Debug.LogError("Fadeobj is null or missing its FadeObj script.");
             //   SceneManager.LoadSceneAsync("GameScene"); // fallback if fade fails
         }
+    }
+    public void SettingsButton()
+    {
+        Settings.SetActive(true);
+        Main.SetActive(false);
+    }
+    public void SettingsBackButton()
+    {
+        Settings.SetActive(false);
+        Main.SetActive(true);
+    }
+    public void AchievementsButton()
+    {
+        AchievementDisplay achievementDisplay = GetComponent<AchievementDisplay>();
+        achievementDisplay.SetupAchievements();
+        Achievements.SetActive(true);
+        foreach (var btn in GameObject.FindGameObjectsWithTag("Button"))
+        {
+            var button = btn.GetComponent<Button>();
+            if (button != null)
+                button.interactable = false;
+        }
+
+    }
+
+    public void CloseAchievements()
+    {
+        AchievementDisplay achievementDisplay = GetComponent<AchievementDisplay>();
+        achievementDisplay.SetupAchievements();
+        Achievements.SetActive(false);
+        foreach (var btn in GameObject.FindGameObjectsWithTag("Button"))
+        {
+            var button = btn.GetComponent<Button>();
+            if (button != null)
+                button.interactable = true;
+        }
+
     }
 }

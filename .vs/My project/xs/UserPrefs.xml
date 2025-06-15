@@ -1,14 +1,14 @@
 ﻿<Properties StartupConfiguration="{32C3BDE6-E125-3128-82C1-25D0441455A3}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/SeasonMode/SeasonModeUI.cs">
     <Files>
-      <File FileName="Assets/Scripts/Gameplay/GameController.cs" Line="519" Column="33" />
-      <File FileName="Assets/Scripts/Gameplay/ChallengeMode/gamecontroller2.cs" />
-      <File FileName="Assets/Scripts/SeasonMode/SeasonModeUI.cs" Line="48" Column="1" />
-      <File FileName="Assets/Scripts/Menu/FadeObj.cs" />
-      <File FileName="Assets/Scripts/Gameplay/UI.cs" />
-      <File FileName="Assets/Scripts/Menu/MenuController.cs" />
-      <File FileName="Assets/Scripts/Gameplay/PrefabManager.cs" />
-      <File FileName="Assets/Scripts/SeasonMode/PostSeasonController.cs" Line="36" Column="1" />
+      <File FileName="Assets/Scripts/Menu/MenuController.cs" Line="17" Column="1" />
+      <File FileName="Assets/Scripts/Gameplay/PrefabManager.cs" Line="69" Column="1" />
+      <File FileName="Assets/Scripts/SeasonMode/PostSeasonController.cs" />
+      <File FileName="Assets/Scripts/Menu/SPLASH SCREEN/ScreenSizeControllerOnLaunch.cs" Line="20" Column="1" />
+      <File FileName="Assets/Scripts/Menu/SelectionScreen.cs" Line="83" Column="1" />
+      <File FileName="Assets/Scripts/SeasonMode/LeagueTableManager.cs" Line="84" Column="1" />
+      <File FileName="Assets/Scripts/SeasonMode/SeasonModeUI.cs" Line="170" Column="32" />
+      <File FileName="Assets/Scripts/SeasonMode/SeasonModeController.cs" Line="26" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,6 +16,15 @@
           <Node name="My project" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Editor" expanded="True" />
+              <Node name="FacebookSDK" expanded="True">
+                <Node name="Examples" expanded="True">
+                  <Node name="Mobile" expanded="True">
+                    <Node name="Scripts" expanded="True">
+                      <Node name="SubMenus" expanded="True" />
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
               <Node name="Krivodeling" expanded="True">
                 <Node name="UI" expanded="True">
                   <Node name="Effects" expanded="True">
@@ -29,7 +38,9 @@
                 <Node name="Gameplay" expanded="True">
                   <Node name="ChallengeMode" expanded="True" />
                 </Node>
-                <Node name="Menu" expanded="True" />
+                <Node name="Menu" expanded="True">
+                  <Node name="SPLASH SCREEN" expanded="True" />
+                </Node>
                 <Node name="ScriptableObjects" expanded="True" />
                 <Node name="SeasonMode" expanded="True">
                   <Node name="SeasonModeUI.cs" selected="True" />
@@ -44,7 +55,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="932c1f22-d844-4ddd-97cb-a6b493a7f8f9" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9d4c9c3f-8bbd-435e-b238-c9b8fcb3133a" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
